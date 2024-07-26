@@ -9,7 +9,7 @@ fi
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-plugins=(git fzf  zsh-syntax-highlighting zsh-autosuggestions autojump)
+plugins=(git fzf zsh-syntax-highlighting zsh-autosuggestions autojump)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -46,11 +46,10 @@ alias vim='nvim'
 alias cd='z'
 alias ka='kubectl apply -f'
 alias kd='kubectl delete -f'
-alias ti='tofu init -upgrade'
-alias ta='tofu apply -auto-approve'
-alias to='tofu'
+alias ti='terraform init'
+alias ta='terraform apply -auto-approve'
+alias tf='terraform'
 
-export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -64,12 +63,8 @@ export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 # zoxide config
 eval "$(zoxide init zsh)"
 
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /opt/homebrew/bin/tofu tofu
-
 # krew 
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
-
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -86,5 +81,12 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-
+# auto complete for terraform
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
+
+
+fpath+=~/.zfunc
+autoload -Uz compinit && compinit
+
+## curl path 
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
