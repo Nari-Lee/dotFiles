@@ -1,0 +1,13 @@
+[core]
+  sshCommand = ssh -i ~/.ssh/id_ed25519_work
+
+[user]
+  name = jymaeng33
+  email = jymaeng@gaonprime.com
+  signingkey = 122368B2FD23A9DEC337D8D38D5B354D16D20E8A
+
+[commit]
+  gpgsign = true
+
+[gpg]
+  program = gpg

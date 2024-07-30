@@ -1,0 +1,9 @@
+[user]
+	name = jymaeng33
+	email = jymaeng@gaonprime.com
+
+[includeIf "gitdir:~/codes/gaon/"]
+	path = ~/codes/gaon/.gitconfig
+
+[includeIf "gitdir:~/codes/kocean/"]
+	path = ~/codes/kocean/.gitconfig
