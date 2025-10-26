@@ -15,9 +15,11 @@
       - launches.appsflyer.com (토스)
       - inapps.appsflyer.com (토스)
       - tkqlhce.com
+      
 2. Filter
     - List KR Unified (https://github.com/List-KR/List-KR)
         - https://cdn.jsdelivr.net/gh/List-KR/List-KR@latest/filter-AdGuard-unified.txt
+      
 3. 확장 프로그램
     - tinyShield
       - https://cdn.jsdelivr.net/npm/@filteringdev/tinyshield@latest/dist/tinyShield.user.js
