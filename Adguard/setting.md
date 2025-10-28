@@ -21,7 +21,7 @@
         - https://cdn.jsdelivr.net/gh/List-KR/List-KR@latest/filter-AdGuard-unified.txt
       
 3. 확장 프로그램
-    - tinyShield
+    - tinyShield (https://github.com/FilteringDev/tinyShield?tab=readme-ov-file)
       - https://cdn.jsdelivr.net/npm/@filteringdev/tinyshield@latest/dist/tinyShield.user.js
     - NamuLink (https://github.com/FilteringDev/NamuLink)
       - https://cdn.jsdelivr.net/npm/@filteringdev/namulink@latest/dist/NamuLink.user.js
